@@ -42,3 +42,11 @@
     box-shadow: 10px 15px 80px;
     color: yellow;
 }
+.btn-container {
+    position: absolute;
+    transform: translateX(150%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+}
