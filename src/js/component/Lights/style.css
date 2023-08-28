@@ -24,15 +24,21 @@
 }
 .red {
     background-color: red;
+    margin-top: 10px;
 }
 .yellow {
     background-color: yellow;
 }
 .green {
     background-color: green;
+    margin-bottom: 10px;
 }
 .sujecion {
     width: 2vw;
     height: 10vh;
     background-color: black;
+}
+.selected {
+    box-shadow: 10px 15px 80px;
+    color: yellow;
 }
