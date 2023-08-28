@@ -1,0 +1,38 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container-lights{
+    background-color: black;
+    width: 20vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+.light {
+    width: 13vw;
+    height: 30vh;
+    border-radius: 80%;
+    background-color: blueviolet;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.sujecion {
+    width: 2vw;
+    height: 10vh;
+    background-color: black;
+}
