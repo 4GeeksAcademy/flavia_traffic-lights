@@ -9,17 +9,21 @@ const Lights = () => {
         setColor(randomColor);
     };
 
+    const [lights, setLights] = useState(["red", "yellow", "green"]);
+    const addPurpleLight = () => {
+        setLights([...lights, "purple"])
+    }
     return (
         <div className='container'>
             <div className='btn-container'>
             <button onClick={shuffleColor} id="btn-shuffle" type="button" className="btn btn-primary btn-lg">Shuffle the color</button>
-            <button id="btn-purpure" type="button" className="btn btn-secondary btn-lg">Add a new color</button>
+            <button onClick={addPurpleLight} id="btn-purple" type="button" className="btn btn-secondary btn-lg">Add a new color</button>
             </div>
             <div className='sujecion'></div>
             <div className='container-lights'>
-                <div onClick={() => setColor("red")} className={`light red ${color === "red" ? " selected" : ""}`}></div>
-                <div onClick={() => setColor("yellow")} className={`light yellow ${color === "yellow" ? " selected" : ""}`}></div>
-                <div onClick={() => setColor("green")} className={`light green ${color === "green" ? " selected" : ""}`}></div>
+                {
+                    lights.map((lightColor, index) =>(<div key={index} onClick={() => setColor(lightColor)} className={`light ${lightColor} ${color === lightColor? " selected" : ""}`}></div>))
+                }
             </div>
         </div>
     )
