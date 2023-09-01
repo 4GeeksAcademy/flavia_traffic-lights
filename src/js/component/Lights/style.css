@@ -8,8 +8,8 @@
 }
 .container-lights{
     background-color: black;
-    width: 20vw;
-    height: 90vh;
+    width: 15vw;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,10 +17,9 @@
     border-radius: 10%;
 }
 .light {
-    width: 13vw;
-    height: 30vh;
+    width: 10vw;
+    height: 21vh;
     border-radius: 80%;
-    background-color: blueviolet;
 }
 .red {
     background-color: red;
@@ -35,6 +34,21 @@
 }
 .purple {
     background-color: purple;
+}
+.blue {
+    background-color: blue;
+}
+.pink {
+    background-color: pink;
+}
+.orange {
+    background-color: orange;
+}
+.aqua {
+    background-color: aqua;
+}
+.brown {
+    background-color: brown;
 }
 .sujecion {
     width: 2vw;
